@@ -14,6 +14,8 @@ swapon /dev/sda6
 pacman -Sy
 pacman -Sy pacman-contrib archlinux-keyring
 
+
+cp  /etc/pacman.d/mirrorlist /tmp/mirrorlist
 rankmirrors -n 10 /tmp/mirrorlist > /etc/pacman.d/mirrorlist
 
 pacstarp -i /mnt base linux linux-firmware wget curl
