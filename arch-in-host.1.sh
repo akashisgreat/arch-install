@@ -17,6 +17,6 @@ pacman -Sy pacman-contrib archlinux-keyring
 rankmirrors -n 10 /tmp/mirrorlist > /etc/pacman.d/mirrorlist
 
 pacstarp -i /mnt base linux linux-firmware wget curl
-echo -e "Install further these pkg: linux-headers intel-ucode nano sudo vim git neofetch networkmanager dhcpcd pulseaudio bluez wpa_supplican \n May install: base-devel linux-lts"
+echo -e "Install further these pkg: linux-headers intel-ucode nano sudo vim git neofetch networkmanager dhcpcd pulseaudio bluez wpa_supplicant \n May install: base-devel linux-lts"
 
 genfstab -U /mnt >> /mnt/etc/fstab
